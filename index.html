@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,800,900&amp;subset=latin-ext" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <div class="container h-100 search-area">
+      <h1 class="app-title text-center">Weather App</h1>
+      <div class="d-flex justify-content-center h-100 mt-4">
+        <div class="searchbar">
+          <input class="search-input" type="text" placeholder="Search City"/>
+          <button class="search-button" type="button">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="card bg-dark text-white mt-5">
+          <img class="card-img" src="https://via.placeholder.com/293x300" alt="Card image"/>
+          <div class="card-img-overlay">
+            <div class="weather-header">
+              <h5 id="city-name" class="card-title"></h5>
+              <h5 id="country-code" class="card-title"></h5>
+            </div>
+            <div class="weather-description">
+              <p id="degree" class="card-text text-center"></p>
+              <p id="description" class="card-text text-center"></p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Wind: <span id="wind"></span></p>
+            <p class="card-text">Humidity: <span id="humidity"></span></p>
+            <p class="card-text">Min Degree: <span id="temp-min"></span></p>
+            <p class="card-text">Max Degree: <span id="temp-max"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

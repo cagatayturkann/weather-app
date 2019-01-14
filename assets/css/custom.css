@@ -1,0 +1,103 @@
+/* ===== Generic CSS  ===== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #393E41; */
+  background-image: url('../img/cloud.jpg');
+  font-family: 'Muli', sans-serif;
+}
+/* ===== Search Bar ===== */
+.search-area {
+  margin-top: 100px;
+}
+
+.app-title {
+  color: #fff;
+}
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search-input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.search-input::placeholder {
+  color: #fff;
+}
+
+.search-button {
+  border: none;
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  background: transparent;
+}
+
+.searchbar:hover>.search-input {
+  padding: 0 10px;
+  width: 450px;
+  caret-color: #f00;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search-button {
+  background: #fff;
+  color: #e74c3c;
+  border: none;
+}
+
+.search-button:focus {
+  outline: none;
+  }
+
+/* ===== Weather Card CSS ===== */
+.card {
+  border: none;
+  margin: 0 auto;
+}
+
+.card-img {
+  width: 280px;
+  height: 300px;
+}
+
+.weather-header {
+  display: flex;
+}
+
+.weather-header h5 {
+  font-family: 'Muli', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.weather-description {
+  font-family: 'Muli', sans-serif;
+  font-size: 17px;
+  line-height: 10px;
+  font-weight: 900;
+  margin-top: 82%;
+  margin-right: 5px;
+}
