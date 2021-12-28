@@ -56,44 +56,44 @@ $(document).ready(function () {
           tempMax.append(data.main.temp_max + " " + "℃");
 
           if (data.weather[0].icon === "01d") {
-            $(".card-img").attr("src", "/assets/img/01d.jpg");
+            $(".card-img").attr("src", "./assets/img/01d.jpg");
           } else if (data.weather[0].icon === "01n") {
-            $(".card-img").attr("src", "/assets/img/01n.jpg");
+            $(".card-img").attr("src", "./assets/img/01n.jpg");
           } else if (data.weather[0].icon === "02d") {
-            $(".card-img").attr("src", "/assets/img/02d.jpg");
+            $(".card-img").attr("src", "./assets/img/02d.jpg");
           } else if (data.weather[0].icon === "02n") {
-            $(".card-img").attr("src", "/assets/img/02n.jpg");
+            $(".card-img").attr("src", "./assets/img/02n.jpg");
           } else if (
             data.weather[0].icon === "03d" ||
             data.weather[0].icon === "03n" ||
             data.weather[0].icon === "04d" ||
             data.weather[0].icon === "04n"
             ) {
-              $(".card-img").attr("src", "/assets/img/03dn-04dn.jpg");
+              $(".card-img").attr("src", "./assets/img/03dn-04dn.jpg");
           } else if (
             data.weather[0].icon === "09d" ||
             data.weather[0].icon === "09n"
             ) {
-              $(".card-img").attr("src", "/assets/img/09d-09n.jpg");
+              $(".card-img").attr("src", "./assets/img/09d-09n.jpg");
             } else if (data.weather[0].icon === "10d") {
-              $(".card-img").attr("src", "/assets/img/10d.jpg");
+              $(".card-img").attr("src", "./assets/img/10d.jpg");
             } else if (data.weather[0].icon === "10n") {
-              $(".card-img").attr("src", "/assets/img/10n.jpg");
+              $(".card-img").attr("src", "./assets/img/10n.jpg");
             } else if (
             data.weather[0].icon === "11d" ||
             data.weather[0].icon === "11n"
           ) {
-            $(".card-img").attr("src", "/assets/img/11d-11n.jpg");
+            $(".card-img").attr("src", "./assets/img/11d-11n.jpg");
           } else if (
             data.weather[0].icon === "13d" ||
             data.weather[0].icon === "13n"
           ) {
-            $(".card-img").attr("src", "/assets/img/13d-13n.jpg");
+            $(".card-img").attr("src", "./assets/img/13d-13n.jpg");
           } else if (
             data.weather[0].icon === "50d" ||
             data.weather[0].icon === "50n"
           ) {
-            $(".card-img").attr("src", "/assets/img/50d-50n.jpg");
+            $(".card-img").attr("src", "./assets/img/50d-50n.jpg");
           }
         } else {
           alert("City Not Found!");
