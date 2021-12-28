@@ -9,7 +9,7 @@ $(document).ready(function () {
   if (city !== "") {
     $.ajax({
       url:
-        "http://api.openweathermap.org/data/2.5/weather?q=" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
         "&units=metric&appid=bf7204410541c2808973649e5e63aecf",
       method: "GET"
